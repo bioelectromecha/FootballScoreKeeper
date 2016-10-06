@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Football Score Keeper</string>
+    <string name="team_a_title">Team A</string>
+    <string name="team_b_title">Team B</string>
+    <string name="score_title">score</string>
+    <string name="default_score">0</string>
+    <string name="fouls_title">fouls</string>
+    <string name="increment_score">+1</string>
+    <string name="reset_button_text">RESET</string>
+</resources>

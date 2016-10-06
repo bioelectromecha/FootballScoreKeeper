@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+    </style>
+
+    <!--these are the styles used for the view in activity_main.xml-->
+    <style name="AppTheme.TeamStyle" parent="AppTheme">
+        <item name="android:layout_marginTop">@dimen/single_standard_margin</item>
+    </style>
+
+    <style name="AppTheme.TeamTitle" parent="AppTheme.TeamStyle">
+        <item name="android:textSize">@dimen/large_text_size</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+
+    <style name="AppTheme.ScoreTitle" parent="AppTheme.TeamStyle">
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+
+    <style name="AppTheme.Score" parent="AppTheme.TeamStyle">
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle"> bold</item>
+    </style>
+
+    <style name="AppTheme.Fouls" parent="AppTheme.TeamStyle">
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle"> bold</item>
+    </style>
+
+    <style name="AppTheme.TeamStyle.Button.IncrementScore" parent="AppTheme.Button">
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:layout_marginTop">@dimen/single_standard_margin</item>
+    </style>
+
+    <style name="AppTheme.TeamStyle.Button.IncrementFouls" parent="AppTheme.Button">
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:layout_marginTop">@dimen/single_standard_margin</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+    </style>
+
+</resources>

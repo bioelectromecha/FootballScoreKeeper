@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--the outer <layout> tag is for the android databinding library -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="roman.com.footballscorekeeper.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/single_standard_margin"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+
+
+                <!--team A column-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/textview_team_a_title"
+                        style="@style/AppTheme.TeamTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/team_a_title"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_team_a_score_title"
+                        style="@style/AppTheme.ScoreTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/score_title"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_team_a_score"
+                        style="@style/AppTheme.Score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/default_score"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_team_a_fouls_title"
+                        style="@style/AppTheme.ScoreTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/fouls_title"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_team_a_fouls"
+                        style="@style/AppTheme.Fouls"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/default_score"
+                        />
+
+                    <Button
+                        android:id="@+id/button_team_a_increment_score"
+                        style="@style/AppTheme.TeamStyle.Button.IncrementScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/increment_score"
+                        android:onClick="onClickIncrementScoreTeamA"
+                        />
+
+                    <Button
+                        android:id="@+id/button_team_a_increment_fouls"
+                        style="@style/AppTheme.TeamStyle.Button.IncrementFouls"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/increment_score"
+                        android:onClick="onClickIncrementFoulsTeamA"
+                        />
+
+                </LinearLayout>
+
+
+                <!--seperator line-->
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorAccent"/>
+                </LinearLayout>
+
+
+                <!--team B column-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/textview_team_b_title"
+                        style="@style/AppTheme.TeamTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/team_b_title"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_team_b_score_title"
+                        style="@style/AppTheme.ScoreTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/score_title"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_team_b_score"
+                        style="@style/AppTheme.Score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/default_score"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_team_b_fouls_title"
+                        style="@style/AppTheme.ScoreTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/fouls_title"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_team_b_fouls"
+                        style="@style/AppTheme.Fouls"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/default_score"
+                        />
+
+                    <Button
+                        android:id="@+id/button_team_b_increment_score"
+                        style="@style/AppTheme.TeamStyle.Button.IncrementScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/increment_score"
+                        android:onClick="onClickIncrementScoreTeamB"
+                        />
+
+                    <Button
+                        android:id="@+id/button_team_b_increment_fouls"
+                        style="@style/AppTheme.TeamStyle.Button.IncrementFouls"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/increment_score"
+                        android:onClick="onClickIncrementFoulsTeamB"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                style="@style/AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/reset_button_text"
+                android:onClick="onClickReset"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>
