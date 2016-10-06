@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         mBinding.textviewTeamBScore.setText(String.valueOf(score));
     }
 
-
     /**
      * click listener for the increment fouls button for Team B
      *
